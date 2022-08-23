@@ -108,9 +108,9 @@
       })
       function onSignIn(googleUser) {
         var profile = googleUser.getBasicProfile();
-        profimg = profile.getImageUrl()
+//         profimg = profile.getImageUrl()
         document.getElementsByClassName("g-signin2").style.display = "none";
-        document.getElementById("profimg").src = profimg
+        document.getElementById("profimg").src = profile.getImageUrl()
       }
     </script>
   </body>
