@@ -109,10 +109,8 @@
       function onSignIn(googleUser) {
         console.log("awhdjawsdhajwd")
         var profile = googleUser.getBasicProfile();
-//         profimg = profile.getImageUrl()
-        document.getElementsByClassName("g-signin2").style.display = "none";
-        document.getElementById("profimg").src = profile.getImageUrl()
-        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+//         document.getElementsByClassName("g-signin2").style.display = "none";
+//         document.getElementById("profimg").src = profile.getImageUrl()
         console.log('Full Name: ' + profile.getName());
         console.log('Given Name: ' + profile.getGivenName());
         console.log('Family Name: ' + profile.getFamilyName());
